@@ -36,6 +36,7 @@ export default class Form extends Component {
     const Post = ({
       name: this.state.name,
       content:this.state.content,
+      time: firebase.firestore.FieldValue.serverTimestamp(),
     });
     Ref.add(Post);
   }
