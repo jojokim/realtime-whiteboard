@@ -10,9 +10,14 @@ import firestore from "firebase/firestore";
 
 // configure firebase //
 var config = {
-   // fetch from firebase //
-
-};
+    apiKey: "AIzaSyDqbv9LVpjEuoFJHyCHAV2IIMOfhGTEqJ0",
+    authDomain: "demofirebaseterps.firebaseapp.com",
+    databaseURL: "https://demofirebaseterps.firebaseio.com",
+    projectId: "demofirebaseterps",
+    storageBucket: "",
+    messagingSenderId: "179866760241"
+  };
+  
 firebase.initializeApp(config);
 firebase.firestore().enablePersistence();
 

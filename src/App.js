@@ -5,19 +5,15 @@ import './App.css';
 // import firestore //
 import firebase from 'firebase';
 import firestore from 'firebase/firestore'
-// import form //
-import Form from './components/form'
 
 let Ref;
 
 class App extends Component {
   constructor() {
     super();
-
     this.state = {
       posts : [],
     };
-
     this.getRealtimeUpdates = this.getRealtimeUpdates.bind(this);
   }
 
