@@ -10,12 +10,7 @@ import firestore from "firebase/firestore";
 
 // configure firebase //
 var config = {
-    apiKey: "AIzaSyDqbv9LVpjEuoFJHyCHAV2IIMOfhGTEqJ0",
-    authDomain: "demofirebaseterps.firebaseapp.com",
-    databaseURL: "https://demofirebaseterps.firebaseio.com",
-    projectId: "demofirebaseterps",
-    storageBucket: "",
-    messagingSenderId: "179866760241"
+    // fetch from firebase console //
   };
   
 firebase.initializeApp(config);
