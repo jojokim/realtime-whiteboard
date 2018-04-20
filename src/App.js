@@ -22,17 +22,14 @@ class App extends Component {
       let newArr = [];
       snap.forEach(doc => {
         let name = doc.data().name;
-        let content = doc.data().content;
-        let time = doc.data().time;
+        let content = doc.data().msg;
 
-        let post = ({
+        let m = ({
           name,
           content,
-          time,
         });
-        newArr.push(post);
+        newArr.push(m);
       });
-      newArr.sort((a,b) => {return a.time-b.time});
       this.setState(this.state.posts = newArr);
     });
   }
